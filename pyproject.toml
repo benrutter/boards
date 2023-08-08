@@ -1,0 +1,19 @@
+[build-system]
+requires = ["flit_core>=3.2"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "boards"
+version = "0.2"
+description = "Recursive kanban tool in the command line"
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+    "send2trash",
+    "rich",
+    "tomlkit",
+    "typer",
+]
+
+[project.scripts]
+bd = "boards.main:run_app"
