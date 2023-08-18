@@ -17,3 +17,9 @@ dependencies = [
 
 [project.scripts]
 bd = "boards.main:run_app"
+
+[tool.rye]
+dev-dependencies = [
+    "ipdb>=0.13.13",
+    "grip>=4.6.1",
+]
