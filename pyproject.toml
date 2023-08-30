@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [project]
 name = "boards"
-version = "0.2"
+version = "0.3"
 description = "Recursive kanban tool in the command line"
 readme = "README.md"
 requires-python = ">=3.6"
