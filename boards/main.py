@@ -183,6 +183,7 @@ class BoardsApp:
             print("[red]Item cannot have numeric only name[/red]")
             return
         filepath: Path = self.board_dir / Path(self.lanes[0]) / (item + ".md")
+        filepath.parent.mkdir(parents=True, exist_ok=True)
         with open(filepath, "w", encoding="utf-8") as file:
             file.write(f"# {item}\n(edit here to add notes)")
 
